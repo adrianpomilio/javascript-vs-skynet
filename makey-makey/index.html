@@ -1,0 +1,49 @@
+<html>
+
+<body id="body">
+
+<input type="text" />
+
+<script>
+
+
+// handle keys
+
+function keySense(e) {
+	var key = e.keyCode || e.charCode || 0;
+
+	switch(key){
+				     
+                case 32: //Space
+                    console.log("space");
+                    document.getElementById('body').style.backgroundColor = 'red';
+                    
+                    break;
+                     
+                case 38: //up
+                    console.log("up");
+                    document.getElementById('body').style.backgroundColor = 'white';
+                    break;
+                     
+                case 40: //down
+                    console.log("down");
+                    break;
+                     
+                case 39: //right
+                    console.log("right");
+                    break;  
+                     
+                case 37: //left
+                    console.log("left");
+                    break;      
+	}
+    
+};
+
+
+
+document.onkeydown = keySense;
+
+</script>
+</body>
+</html>
