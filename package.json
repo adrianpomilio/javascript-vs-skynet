@@ -17,6 +17,8 @@
     "cylon-leapmotion": "^0.12.0",
     "cylon-sphero": "^0.14.0",
     "ir-attx4": "^0.2.4",
-    "johnny-five": "^0.8.9"
+    "johnny-five": "^0.8.9",
+    "node-twitter-api": "^1.3.0",
+    "twilio": "^1.7.0"
   }
 }

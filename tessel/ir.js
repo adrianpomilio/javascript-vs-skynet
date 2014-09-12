@@ -25,7 +25,7 @@ infrared.on('ready', function() {
 				if(err) {
 					console.log("unable to send signal: " + err);
 				} else {
-					consoloe.log("signal sent");
+					console.log("signal sent");
 				}
 			});
 		}, 3000);
