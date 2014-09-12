@@ -1,7 +1,7 @@
 var Cylon = require('cylon');
 
 Cylon.robot({
-  connection: { name: 'arduino', adaptor: 'firmata', port: '/dev/cu.usbmodemfd121' },
+  connection: { name: 'arduino', adaptor: 'firmata', port: '/dev/cu.usbmodem1411' },
   //device: { name: 'servo', driver: 'continuous-servo', pin: 13 },
 
   devices: [
@@ -12,8 +12,8 @@ Cylon.robot({
   work: function(my) {
 
     console.log(my);
-    my.servoL.counterClockwise();
-    my.servoR.counterClockwise();
+    my.servoL.clockwise();
+  //  my.servoR.clockwise();
     // var angle = 45;
     // my.servo.angle(angle);
     //

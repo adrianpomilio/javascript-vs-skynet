@@ -1,9 +1,19 @@
 <html>
-
+<head>
+		<style>
+			h1, p {
+				width: 200px;
+				height:50px;
+				font-family: Helvetica;
+				margin:auto;
+			}
+			h1 {margin:20% auto 5%;}
+		</style>
+</head>
 <body id="body">
 
-<input type="text" />
-
+<h1>Fun Circuits</h1>
+<p>with Makey Makey</p>
 <script>
 
 
@@ -11,33 +21,43 @@
 
 function keySense(e) {
 	var key = e.keyCode || e.charCode || 0;
+	var elColl = document.getElementsByTagName('h1');
+	var elBody = document.getElementById('body');
 
 	switch(key){
-				     
+
                 case 32: //Space
                     console.log("space");
-                    document.getElementById('body').style.backgroundColor = 'red';
-                    
+                    elBody.style.backgroundColor = 'white';
+										elColl[0].innerHTML = "Space... cool dude!";
+
                     break;
-                     
+
                 case 38: //up
                     console.log("up");
-                    document.getElementById('body').style.backgroundColor = 'white';
+                    elBody.style.backgroundColor = 'green';
+										elColl[0].innerHTML = "We rise";
                     break;
-                     
+
                 case 40: //down
                     console.log("down");
+										elBody.style.backgroundColor = 'orange';
+										elColl[0].innerHTML = 'We fall';;
                     break;
-                     
+
                 case 39: //right
                     console.log("right");
-                    break;  
-                     
+										elBody.style.backgroundColor = 'red';
+										elColl[0].innerHTML = 'We go right';
+                    break;
+
                 case 37: //left
                     console.log("left");
-                    break;      
+										elBody.style.backgroundColor = 'blue';
+										elColl[0].innerHTML = 'We go left';
+                    break;
 	}
-    
+
 };
 
 
