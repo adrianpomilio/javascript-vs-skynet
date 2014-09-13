@@ -1,7 +1,7 @@
 var serialport = require ('serialport');
 var SerialPort = serialport.SerialPort;
 
-var myserial = new SerialPort('/dev/cu.usbmodemfd121',
+var myserial = new SerialPort('/dev/cu.usbmodem1411',
 		{
 			baudrate: 9600,
 			parser: serialport.parsers.readline('\n')

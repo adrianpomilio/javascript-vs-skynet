@@ -1,7 +1,7 @@
 var Cylon = require('cylon');
 
 Cylon.robot({
-  connection: { name: 'arduino', adaptor: 'firmata', port: '/dev/cu.usbmodemfd121' },
+  connection: { name: 'arduino', adaptor: 'firmata', port: '/dev/cu.usbmodem1411' },
 
   devices: [
     { name: 'led', driver: 'led', pin: 13 },
@@ -11,7 +11,7 @@ Cylon.robot({
 
   work: function(my) {
     every(
-      (5).second(),
+      (2).second(),
       function() {
         my.led.toggle();
       }
