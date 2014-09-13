@@ -16,5 +16,7 @@ node_modules/
 bower_modules/
 apikeys/
 
+tessel/twilio.js
+
 notes.txt
 todo.txt
