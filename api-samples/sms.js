@@ -7,7 +7,7 @@ var client = require('twilio')(twilioKeys.sid, twilioKeys.authToken);
 client.messages.create({
     to: "9196560380",
     from: "+19198270744",
-    body: "testing",
+    body: "I am not Regan"
 }, function(err, message) {
     console.log(message.sid);
 });
