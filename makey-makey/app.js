@@ -3,12 +3,12 @@
 */
 
 // handle keys
-
+"use strict"
 function keySense(e) {
-	var unicode = e.keyCode ? e.keyCode : e.charCode;
+    var key = e.keyCode || e.charCode || 0;
 
-	switch(unicode){
-	case 87: //W
+	switch(key){
+	            case 87: //W
                     console.log("W");
                     break;
 
@@ -53,5 +53,6 @@ function keySense(e) {
                     break;
 	}
 
-};
-document.onkeypress = keySense;
+}
+
+document.onkeydown = keySense;
